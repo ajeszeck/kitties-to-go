@@ -1,0 +1,46 @@
+* {
+  box-sizing: flex-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: helvetica, sans-serif;
+}
+
+header {
+  background-color: black;
+}
+
+nav {
+  display: inline;
+  
+}
+
+h1 {
+  color: white;
+  padding: 0.25rem;
+}
+
+h3 {
+  color: grey;
+  padding: 0rem;
+}
+ div.centercontent {
+   display: flex;
+   justify-content: space-between;
+ }
+
+aside.catspotlight {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid black;
+  flex-direction: column;
+
+}
+ footer div {
+   align-items: left;
+ }
+
+ footer div div {
+   align-items: center;
+ }
