@@ -1,46 +1,109 @@
 * {
-  box-sizing: flex-box;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 18px;
-  font-family: helvetica, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 header {
   background-color: black;
+  height: 11rem;
+  padding-left: 1rem;
 }
 
-nav {
-  display: inline;
-  
+div.bookcat {
+  text-align: right;
+  color: red;
 }
 
+.email a:visited {
+   color: red;
+ }
+
+ .bookcat a:visited {
+    color: red;
+  }
+
+nav.navigation {
+  background-color: grey;
+  justify-content: space-around;
+
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+nav ul li a {
+  text-decoration: underline;
+
+
+}
 h1 {
   color: white;
-  padding: 0.25rem;
+  margin-top: 3rem;
 }
 
-h3 {
+h3.subhead {
   color: grey;
-  padding: 0rem;
 }
+
+/*div.centercontent is articles and the aside */
  div.centercontent {
-   display: flex;
-   justify-content: space-between;
+ display: flex;
+ flex-wrap: nowrap;
+ direction: ltr;
+ align-items: stretch;
+ justify-content: space-around;
  }
+
+section.newscontent {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  padding-left: 0.5rem;
+ }
+
+article > h2 {
+  font-size: 2rem;
+}
+article > p {
+  font-size: 1.5rem;
+}
 
 aside.catspotlight {
   display: flex;
-  align-items: center;
   border: 0.1rem solid black;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+div > h2 {
 
 }
- footer div {
-   align-items: left;
+img.catintube {
+  width: 3rem;
+}
+
+footer {
+   background-color: black;
  }
 
- footer div div {
-   align-items: center;
+footer div ul{
+   align-items: left;
+   color: white;
+ }
+
+ /*Doesn't work*/
+div.email {
+  color: red
+}
+
+
+ div.copywrite > p {
+   color: white;
+   text-align: center;
  }
