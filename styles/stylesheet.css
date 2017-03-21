@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+  font-weight: normal;
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
   font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -16,39 +17,48 @@ header {
 div.bookcat {
   text-align: right;
   color: red;
+  font-size: 1rem;
+  padding-top: 1rem;
 }
 
-.email a:visited {
-   color: red;
- }
-
- .bookcat a:visited {
+.bookcat a:visited {
     color: red;
   }
 
 nav.navigation {
+  display: flex;
   background-color: grey;
   justify-content: space-around;
-
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-ul {
+nav ul {
   list-style-type: none;
+  flex: 1 1 100%;
+}
+
+li {
+  display: inline-block;
 
 }
 
 nav ul li a {
   text-decoration: underline;
 
-
 }
-h1 {
+
+header h1 {
   color: white;
-  margin-top: 3rem;
+  margin-top: 2.8rem;
+  margin-bottom: 0rem;
 }
 
-h3.subhead {
+header h3.subhead {
   color: grey;
+  font-weight: normal;
+  margin-bottom: 5rem;
+  margin-top: 0.8rem;
 }
 
 /*div.centercontent is articles and the aside */
@@ -62,16 +72,23 @@ h3.subhead {
 
 section.newscontent {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 35rem;
   padding-left: 0.5rem;
+  border: 1px solid black;
  }
 
 article > h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 article > p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+p.italic {
+  font-style: italic;
 }
 
 aside.catspotlight {
@@ -79,31 +96,63 @@ aside.catspotlight {
   border: 0.1rem solid black;
   flex-direction: column;
   justify-content: space-around;
+  align-content: center;
+}
+
+aside > div {
+
 }
 
 div > h2 {
+  font-size: 1.2rem;
 
 }
+
 img.catintube {
   width: 3rem;
 }
 
 footer {
-   background-color: black;
- }
+  background-color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  margin-top: 1rem;
+}
 
-footer div ul{
+footer div ul li {
    align-items: left;
    color: white;
+
  }
 
- /*Doesn't work*/
 div.email {
   color: red
 }
 
-
- div.copywrite > p {
-   color: white;
-   text-align: center;
+.email a:visited {
+   color: red;
  }
+
+
+div.copywrite > p {
+ color: white;
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+/* Code for Book a Cat page */
+
+div.cattypes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cattypes article {
+  width: 25%;
+}
+
+img.catsymbol {
+
+}
