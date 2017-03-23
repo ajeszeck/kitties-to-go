@@ -10,7 +10,7 @@ html {
 
 header {
   background-color: black;
-  height: 11rem;
+  height: 12rem;
   padding-left: 1rem;
 }
 
@@ -21,31 +21,34 @@ div.bookcat {
   padding-top: 1rem;
 }
 
+a {
+  color: red;
+}
 .bookcat a:visited {
     color: red;
   }
 
 nav.navigation {
-  display: flex;
   background-color: grey;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding: 0.005rem;
 }
 
 nav ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
-  flex: 1 1 100%;
+  background-color: grey;
+  justify-content: space-around;
 }
 
 li {
-  display: inline-block;
-
+  padding: 0.5em;
+  font-size: 1.5rem;
 }
 
 nav ul li a {
   text-decoration: underline;
-
+  color: purple;
 }
 
 header h1 {
@@ -66,22 +69,25 @@ header h3.subhead {
  display: flex;
  flex-wrap: nowrap;
  direction: ltr;
- align-items: stretch;
+ align-items: baseline;
  justify-content: space-around;
+ margin-top: 1rem;
  }
 
 section.newscontent {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 35rem;
-  padding-left: 0.5rem;
-  border: 1px solid black;
+  width: 60%;
+  padding: 1rem;
+
  }
 
-article > h2 {
-  font-size: 1.5rem;
+section.newscontent h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
 }
+
 article > p {
   font-size: 1.1rem;
   line-height: 1.7rem;
@@ -94,16 +100,20 @@ p.italic {
 aside.catspotlight {
   display: flex;
   border: 0.1rem solid black;
+  margin: 0;
   flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
+  width: 25%
 }
 
-aside > div {
-
+aside div {
+  align-self: center;
 }
 
-div > h2 {
+div h2 {
+  font-size: 1.3rem;
+}
+
+div h3 {
   font-size: 1.2rem;
 
 }
@@ -112,19 +122,30 @@ img.catintube {
   width: 3rem;
 }
 
+aside div ul li p {
+  width: 50%;
+
+}
+
 footer {
   background-color: black;
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 10rem;
+  height: 13rem;
   margin-top: 1rem;
 }
 
-footer div ul li {
+footer div ul.contact {
+  padding: 1.2rem;
+}
+
+ul.contact li{
    align-items: left;
    color: white;
-
+   display: block;
+   padding: 0.1rem;
+   margin-left: 0.1rem;
  }
 
 div.email {
@@ -135,11 +156,15 @@ div.email {
    color: red;
  }
 
-
-div.copywrite > p {
+.copywrite {
  color: white;
  text-align: center;
- font-size: 1.5rem;
+ font-size: 1rem;
+ position: relative;
+}
+
+p.copywriteinfo {
+  line-height: 1.5rem;
 }
 
 /* Code for Book a Cat page */
@@ -153,6 +178,32 @@ div.cattypes {
   width: 25%;
 }
 
-img.catsymbol {
+button {
+  box-shadow: 0px 2px 3px #444;
+  display: inline-block;
+  border-radius: 10%;
+  padding: 0.2rem;
+}
 
+button a {
+  color: black;
+}
+
+button:hover {
+  background-color: rgba (45, 91, 107, 0.55)
+}
+
+/* Code for kittyprofiles page */
+
+div.catprofiles {
+  display: flex;
+  flex-direction: column;
+}
+
+div.nameandphoto {
+  display: inline-block;
+}
+
+div.descriptionandbutton {
+  display: inline-block;
 }
